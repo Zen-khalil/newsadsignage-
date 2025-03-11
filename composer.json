@@ -1,26 +1,26 @@
 {
-    "name": "georgringer/news",
-    "description": "Versatile news system based on Extbase & Fluid and using the latest technologies provided by TYPO3 CMS.",
+    "name": "zen-khalil/newsadsignage",
+    "description": "A rebranded fork of the news extension tailored for digital signage.",
     "license": "GPL-2.0-or-later",
     "type": "typo3-cms-extension",
     "keywords": [
         "TYPO3",
         "extension",
         "article",
-        "news"
+        "newsadsignage"
     ],
     "authors": [
         {
-            "name": "Georg Ringer",
-            "homepage": "https://ringer.it",
+            "name": "Zen Khalil",
+            "homepage": "https://github.com/Zen-khalil",
             "role": "Developer"
         }
     ],
-    "homepage": "https://extensions.typo3.org/extension/news",
+    "homepage": "https://github.com/Zen-khalil/newsadsignage",
     "support": {
-        "issues": "https://github.com/georgringer/news/issues",
-        "source": "https://github.com/georgringer/news",
-        "docs": "https://docs.typo3.org/p/georgringer/news/main/en-us/"
+        "issues": "https://github.com/Zen-khalil/newsadsignage/issues",
+        "source": "https://github.com/Zen-khalil/newsadsignage",
+        "docs": "https://github.com/Zen-khalil/newsadsignage#readme"
     },
     "require": {
         "php": ">= 8.1 < 8.5",
@@ -41,9 +41,6 @@
         "typo3/testing-framework": "^8.0.9",
         "webmozart/assert": "^1.11.0"
     },
-    "replace": {
-        "typo3-ter/news": "self.version"
-    },
     "suggest": {
         "georgringer/news-tagsuggest": "On the fly creation of tag records within a news record",
         "georgringer/numbered-pagination": "Improved pagination API",
@@ -53,12 +50,12 @@
     },
     "autoload": {
         "psr-4": {
-            "GeorgRinger\\News\\": "Classes"
+            "ZenKhalil\\NewsAdsignage\\": "Classes/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "GeorgRinger\\News\\Tests\\": "Tests"
+            "ZenKhalil\\NewsAdsignage\\Tests\\": "Tests/"
         }
     },
     "config": {
@@ -75,15 +72,8 @@
     "extra": {
         "typo3/cms": {
             "app-dir": ".Build",
-            "extension-key": "news",
+            "extension-key": "newsadsignage",
             "web-dir": ".Build/Web"
         }
-    },
-    "scripts": {
-        "post-autoload-dump": [
-            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
-        ],
-        "cs": "php ./.Build/bin/php-cs-fixer fix  --dry-run -v --config ./Build/php-cs-fixer/php-cs-fixer.php ./",
-        "csfix": "php ./.Build/bin/php-cs-fixer fix  -v --config ./Build/php-cs-fixer/php-cs-fixer.php ./"
     }
 }

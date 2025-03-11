@@ -1,13 +1,13 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'News system',
-    'description' => 'Versatile news system based on Extbase & Fluid and using the latest technologies provided by TYPO3 CMS.',
-    'category' => 'fe',
-    'author' => 'Georg Ringer',
-    'author_email' => 'mail@ringer.it',
-    'state' => 'stable',
-    'version' => '12.3.0',
+    'title' => 'News Ad Signage',
+    'description' => 'A forked and rebranded version of the News extension for digital signage displays.',
+    'category' => 'plugin',
+    'author' => 'Zen Khalil',
+    'author_email' => 'zenkhalil91@gmail.com',
+    'state' => 'alpha',
+    'version' => '1.0.0',
     'constraints' => [
         'depends' => [
             'php' => '8.1.0-8.4.99',
